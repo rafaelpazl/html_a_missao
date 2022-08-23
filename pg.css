@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "content aside"
+    "footer footer";
+    grid-template-rows: 150px 62px 250px 120px;
+    grid-template-columns: 80% 20%;
+
+}
+
+.mainHeader {
+
+    grid-area: header;
+    align-self: stretch;
+}
+
+.mainNav{
+    grid-area: nav;
+    background-color: rgb(37,37,39);
+}
+
+.mainNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mainNav ul li {
+    display: inline;
+}
+
+.mainNav ul li a {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+.mainNav ul li :hover {
+    background-color: rgb(24, 139, 233);
+}
+
+.mainContent{
+    grid-area: content;
+    align-self: center;
+    background: red;
+}
+
+.mainAside {
+
+    grid-area: aside;
+    background: green;
+}
+
+.mainFooter{
+    grid-area: footer;
+}
+
+
