@@ -1,45 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TAGS HTML</title>
-    </head>
-    <style>
-        .font{
-            color: rgb(12, 174, 224); font-size: 25px; margin: 20px; background-color: white; padding: 20px; border: 1px solid black;
-        }
-        body{
-            background-color: rgb(12, 174, 224);font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        h1{
-            color: rgb(12, 174, 224);text-align: center; font-size: 80px;background-color: white;
-        }
-        h2{
-            color: rgb(12, 174, 224);text-align: center; font-size: 25px;background-color: white;
-        }
-        .meio{
-            text-align: center;
-        }
-    </style>
-    <body>
-        
-        <h1><b>TAGS HTML</b></h1>
-        <h2>Cadastre-se </h2>
-        <div class="meio">
-        <form action="/action_page.php" target="_blank">
-            <label for="fname">E-mail:</label><br>
-            <input type="text" id="fname" name="fname" value="exemplo@hotmail.com"><br>
-            <label for="lname">Password:</label><br>
-            <input type="password" id="lname" name="lname" value=""><br><br>
-            <input type="submit" value="Submit">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="indexcss.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="menu">
+        <div class="grid0">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Preço</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="font">
-        </form>
+    </section>
+
+    <section id="banner">
+        <div class="banner">
+            <div class="bannerCont">
+                <h2>Lorem Ipsum is simply dummy text.</h2>
+                <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+                <picture>
+                    <source media="(max-width: 750px)" srcset="banner.png" type="image/png">
+                    <img src="banner.png" alt="bannerPrincipal">
+            </picture>
+            </div>
+        </div>
+    </section>
+    <section class="bloco">
+        <div class="grid1">
+            <div class="titulo">
+                <h2>
+                    Where can I get some?
+                </h2>
+                <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h3><br>
+                <button  class="bt">Clique em mim</button>              
+            </div>
+            <div>
+                <img src="img1.png" alt="imagem 1">
+            </div>
+        </div>
+
+    </section>
+    <section class="bloco">
+        <div class="grid2">
+            <div><img src="img2.png"></div>
+            <div class="titulo">
+                <h2>Where does it come from?</h2>
+                <h3>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</h3><br>
+                <button class="bt">Cliquem em mim</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="grid3">
+        <div class="titulo">
+            <h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque est, dictum vitae fermentum tempor, tempus vitae dolor. Aenean porttitor sem nec fermentum sollicitudin. Sed ac lorem erat. Cras et aliquam leo. Praesent mollis nec lectus ut egestas.</h3>
+            <button class="bt">Clique em mim</button><br>
+            <img src="img3.png" alt="Imagem3">
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer">
+            <div> <img src="footer.png">
+        </div>
+        <div class="titulo">
+            <h2>Products</h2>
+            <ul>
+                <li>Download APP</li>
+                <li>Travel Buddy</li>
+                <li>Travel Buddy Pro</li>
+                <li>Travel Buddy for Teams</li>
+                <li>Help</li>
+            </ul>
+
+        </div>
+        <div class="titulo">
+            <h2>News and Resources</h2>
+                <ul>
+                    <li>Blog</li>
+                    <li>Press</li>
+                    <li>Jobs</li>
+                </ul>
+        </div>
+        <div class="titulo">
+            <h2>Partners</h2>
+                <ul>
+                    <li>Developer API</li>
+                    <li>Suported Booking Sites</li>
+                    <li></li>
+                </ul>
+
+        </div>
+        </div>
+    </footer>
+    <div class="redesSociais">
         <ul>
-            <li>"!DOCTYPE"</li>
-            <li>Exemplo 1 </li>
-            <li>Exemplo 2</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Pinterest</li>
         </ul>
-        </div>
-        
-    </body>
+    </div>
+    <div class="dir">
+        <span>2000 a 2022 Todos os Direitos Reservados</span>
+    </div>
+</body>
 </html>
